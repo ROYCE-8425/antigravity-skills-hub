@@ -358,20 +358,31 @@ for sf in skill_files:
         with open(sf, "w", encoding="utf-8") as f:
             f.write(new_content)
 
-# Also symlink all skills into ~/.gemini/skills/ so Remote VM native skill tools see every skill
-alt_skills_dir = os.path.expanduser("~/.gemini/skills")
-os.makedirs(alt_skills_dir, exist_ok=True)
-for sf in skill_files:
-    sdir = os.path.dirname(sf)
-    sname = os.path.basename(sdir)
-    if sname in ("skills", ""):
-        sname = os.path.basename(os.path.dirname(sdir))
-    dst = os.path.join(alt_skills_dir, sname)
-    if not os.path.exists(dst) and not os.path.islink(dst):
-        try:
-            os.symlink(sdir, dst)
-        except Exception:
-            pass
+# Also symlink all skills into ~/.gemini/skills/ and ~/.gemini/antigravity/skills/ so Remote VM native skill tools see every skill
+for target_root in ["~/.gemini/skills", "~/.gemini/antigravity/skills"]:
+    alt_skills_dir = os.path.expanduser(target_root)
+    os.makedirs(alt_skills_dir, exist_ok=True)
+    for sf in skill_files:
+        sdir = os.path.dirname(sf)
+        sname = os.path.basename(sdir)
+        if sname in ("skills", ""):
+            sname = os.path.basename(os.path.dirname(sdir))
+        dst = os.path.join(alt_skills_dir, sname)
+        if not os.path.exists(dst) and not os.path.islink(dst):
+            try:
+                os.symlink(sdir, dst)
+            except Exception:
+                pass
+
+# Copy global UI/UX rules to ~/.gemini/AGENTS.md if not present
+rules_src = os.path.join(plugins_dir, "custom-skills", "rules", "AGENTS.md")
+rules_dst = os.path.expanduser("~/.gemini/AGENTS.md")
+if os.path.exists(rules_src) and not os.path.exists(rules_dst):
+    try:
+        import shutil
+        shutil.copyfile(rules_src, rules_dst)
+    except Exception:
+        pass
 
 # Collect git plugin statuses
 git_plugins = []
