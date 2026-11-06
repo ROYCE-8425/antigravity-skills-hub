@@ -1,0 +1,10 @@
+{
+  "name": "custom-skills",
+  "displayName": "High-Craft UI/UX, Design Systems & Frontend Skills",
+  "version": "2.0.0",
+  "description": "Integrated UI/UX ecosystem: Taste Skill v3, Impeccable (24 commands & 61 rules), Hallmark (57 anti-slop gates), Awesome DESIGN.md (84 brands), Open Design (152 systems + 3D/Shaders), Google DESIGN.md Spec, React Bits (200+ animated components), and Canvas UI (WebGL/WebGPU over live HTML).",
+  "author": {
+    "name": "Antigravity Workspace"
+  },
+  "license": "MIT"
+}

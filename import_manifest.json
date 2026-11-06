@@ -1,0 +1,101 @@
+{
+  "hubRepo": "https://github.com/ROYCE-8425/antigravity-skills-hub.git",
+  "imports": [
+    {
+      "name": "superpowers",
+      "source": "https://github.com/obra/superpowers.git",
+      "branch": "main",
+      "components": ["skills", "hooks"],
+      "pluginJson": {
+        "name": "superpowers",
+        "displayName": "Superpowers",
+        "version": "7.0.0",
+        "description": "Structured engineering workflow discipline: brainstorming, implementation planning, subagent-driven execution, systematic debugging, TDD, and verification before completion.",
+        "logo": "assets/antigravity-logo.png",
+        "suggestedPrompts": [
+          "Brainstorm and write an implementation plan for this new feature",
+          "Debug this issue systematically and verify the fix before completion",
+          "Execute the implementation plan with verification at every step"
+        ]
+      }
+    },
+    {
+      "name": "ponytail",
+      "source": "https://github.com/DietrichGebert/ponytail.git",
+      "branch": "main",
+      "components": ["skills"],
+      "pluginJson": {
+        "name": "ponytail",
+        "displayName": "Ponytail Minimal Code & Reuse Discipline",
+        "version": "1.0.0",
+        "description": "Reuse-first minimal engineering discipline: caller-aware audits, debt ledger tracking, and strict anti-overbuilding rules."
+      }
+    },
+    {
+      "name": "caveman",
+      "source": "https://github.com/JuliusBrussee/caveman.git",
+      "branch": "main",
+      "components": ["skills", "agents"],
+      "pluginJson": {
+        "name": "caveman",
+        "displayName": "Caveman",
+        "version": "4.0.1",
+        "description": "Ultra-compressed communication & surgical execution skills: strips fluff while preserving 100% of code, paths, commands, numbers, negations, and technical facts.",
+        "logo": "plugins/caveman/assets/caveman.svg",
+        "suggestedPrompts": [
+          "Activate /caveman mode for terse, high-signal technical responses",
+          "Use /surgical-patch to fix this bug at the narrowest responsible layer",
+          "Use /investigate-first to diagnose the root cause with evidence-ranked hypotheses"
+        ]
+      }
+    },
+    {
+      "name": "emilkowalski-skills",
+      "source": "https://github.com/emilkowalski/skills.git",
+      "branch": "main",
+      "components": ["skills"],
+      "pluginJson": {
+        "name": "emilkowalski-skills",
+        "displayName": "Emil Kowalski Design & Animation Skills",
+        "version": "1.0.0",
+        "description": "Skills for Designers and Engineers by Emil Kowalski: web/mobile animations, spring physics, easing, Apple design craftsmanship, Sonner, UI stress-testing, and animation audits.",
+        "author": {
+          "name": "Emil Kowalski"
+        },
+        "license": "MIT"
+      }
+    },
+    {
+      "name": "gsap-skills",
+      "source": "https://github.com/greensock/gsap-skills.git",
+      "branch": "main",
+      "components": ["skills"],
+      "pluginJson": {
+        "name": "gsap-skills",
+        "displayName": "Official GSAP Animation Skills",
+        "version": "1.0.0",
+        "description": "Official GreenSock (GSAP) AI coding skills covering core tweens, timelines, ScrollTrigger, React (@gsap/react useGSAP), plugins, utilities, framework integration, and performance.",
+        "author": {
+          "name": "GreenSock (GSAP)"
+        },
+        "license": "MIT"
+      }
+    },
+    {
+      "name": "scroll-world",
+      "source": "https://github.com/oso95/scroll-world.git",
+      "branch": "main",
+      "components": ["skills"],
+      "pluginJson": {
+        "name": "scroll-world",
+        "displayName": "Scroll World 3D Landing Pages",
+        "version": "1.0.0",
+        "description": "Turn any brand or product into an immersive scrollable 3D world landing page with frame-scrubbing canvas engines and scene transitions.",
+        "author": {
+          "name": "oso95"
+        },
+        "license": "MIT"
+      }
+    }
+  ]
+}

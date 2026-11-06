@@ -1,0 +1,10 @@
+{
+  "name": "anthropic-agent-skills",
+  "displayName": "Anthropic Agent Skills",
+  "version": "1.0.0",
+  "description": "Anthropic official agent skills: docx, pptx, xlsx, pdf, mcp-builder, skill-creator, brand-guidelines, and more.",
+  "author": {
+    "name": "Anthropic"
+  },
+  "license": "Apache-2.0"
+}

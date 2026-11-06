@@ -1,0 +1,10 @@
+{
+  "name": "production-engineering-skills",
+  "displayName": "Production Engineering Skills",
+  "version": "1.0.0",
+  "description": "Essential production software engineering skills: Architecture Review, Security Audit, Database Migrations, Integration Testing, Performance, Safe Refactoring, CI/CD Gates, Rollbacks, and Post-Mortems.",
+  "author": {
+    "name": "Antigravity Engineering"
+  },
+  "license": "MIT"
+}
